@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh ;
+    background: linear-gradient(186deg, rgba(94,93,112,1) 1%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    font-family: monospace;
+
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+h1{
+    font-size: 2.5em;
+    color: bisque;
+    text-shadow: 0 1px 1px yellow;
+    text-align: center;
+}
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+.box1, .box2{
+    
+    width: 50%;
+    margin: 40px 10px 0 0;
+}
+.box2{
+    text-align: center;
+}
+.form{       
+    display:flex;  
+    flex-direction: column;  
+}
+.form label{
+    font-size: 2em;
+    color: beige;
+    text-align: left;
+}
+.input-text,.btn-enviar {
+    margin: 10px 0 ;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    background-color: wheat;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+}
+ 
+.input-text:focus{
+   background-color: rgb(209, 218, 230);
+}
+.btn-enviar{
+   height: 35px;
+   color: rgb(211, 211, 211);
+   background-color: #1759a4;
+   font-size: 1.4em;
+   cursor: pointer;
+}
+.btn-enviar:hover{
+    background-color: #3066a4 ;
+}  
+/* **********Estilos box2***************** */
+.box2 h2 {
+    color: beige;
+    font-size: 2em;
+}
+.box2 .ciudad {
+    color: rgb(139, 218, 86);
+}
+.box2 .temperatura {
+    font-size: 3em;
+    color: #f8ec47;
+}
+
+.box-error{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-shadow:inset 0 0 15px 1px rgb(196, 109, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error {
+    color: #f34545;
+    font-size: 2em;
+}
