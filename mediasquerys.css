@@ -52,7 +52,7 @@
        top: 25%;
     }
     .box3 p {
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin: 10px 5px;
     }
     .box3 p span {
@@ -66,3 +66,19 @@
         text-align: center;
     }
 }
+
+/* *************Altura minima************************ */
+
+ @media screen and (max-height:400px){
+    .box3{
+        max-height: 100vh;
+        overflow-y: scroll;
+        top:0;
+    }
+    .box3::-webkit-scrollbar{
+        width: 1px;
+    }
+    .boxe3::-webkit-scrollbar-thumb{
+        background: rgb(190, 192, 194);
+    }
+ }

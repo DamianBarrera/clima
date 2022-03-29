@@ -5,11 +5,11 @@
 }
 
 body{
-    height:100vh ;
+    min-height: 100vh;
     background: linear-gradient(186deg, rgba(94,93,112,1) 1%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     font-family: monospace;
-
+    
 }
 
 .container{

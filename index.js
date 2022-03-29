@@ -2,6 +2,13 @@ const form = document.querySelector('.form');
 const box = document.querySelector('.box2');
 const modal = document.querySelector('.box3');
 const spinner = document.querySelector('.spinner');
+
+const boton = document.querySelector('.boton');
+     
+boton.addEventListener('click',()=>{
+    alert(innerHeight)
+})
+
  
 form.addEventListener('submit', (e) => {
     box.textContent = "" ;
@@ -58,6 +65,8 @@ function mostrarTemperatura(datos){
     const termica = document.createElement('p');
     const latitud = document.createElement('p');
     const longitud = document.createElement('p');
+
+ 
 
     div.innerHTML = ` <h2>La temperatura en <span class="ciudad">${name}</span> es de:</h2>`;
     divII.innerHTML = `${celsius} &#8451 `;
