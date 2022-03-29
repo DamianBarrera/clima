@@ -31,9 +31,15 @@
         display: block;
     }
     .box1, .box2{
-    
         width: 100%;
-        margin: 40px 10px 0 0;
+
+    }
+    .form label{
+        font-size: 2em;
+    }
+    .input-text,.btn-enviar {
+        height: 40px;
+        font-size: 1em;
     }
 
 }
