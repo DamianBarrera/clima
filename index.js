@@ -31,8 +31,8 @@ function consultarApi(ciudad){
         if(datos.cod === "404"){
             error('NO SE PUDO ENCONTRAR LA CIUDAD ESPECIFICADA')
             return;
-        }
- 
+        }   
+        console.log(datos)
         mostrarTemperatura(datos)  
         masDatos()
         } )
@@ -41,7 +41,7 @@ function consultarApi(ciudad){
 
 function mostrarTemperatura(datos){
     modal.textContent = "";
-    const {name, main:{temp, feels_like,humidity, temp_max}} = datos
+    const {name,coord:{lat, lon}, main:{temp, feels_like,humidity, temp_max}} = datos
      
     const celsius = tempConverter(temp);
     const max = tempConverter(temp_max);
@@ -56,20 +56,25 @@ function mostrarTemperatura(datos){
     const maxima = document.createElement('p')
     const humedad = document.createElement('p');
     const termica = document.createElement('p');
+    const latitud = document.createElement('p');
+    const longitud = document.createElement('p');
 
     div.innerHTML = ` <h2>La temperatura en <span class="ciudad">${name}</span> es de:</h2>`;
-    divII.innerHTML = `${celsius} &#8451; `;
+    divII.innerHTML = `${celsius} &#8451 `;
     divII.classList.add('temperatura')
     ciudadName.textContent = name;
-    tempActual.innerHTML = `Temperatura actual: <span>${celsius}&#8451</span>;`;
+    tempActual.innerHTML = `Temperatura actual: <span>${celsius}&#8451</span>`;
     tempActual.classList.add('actual')
     maxima.innerHTML = `Maxima para hoy: <span>${max}&#8451;</span> `;
     maxima.classList.add('maxima')
     humedad.innerHTML = `Humedad : <span>${humidity}%</span>` ; 
     humedad.classList.add('humedad')
-    termica.innerHTML = `Sensación Termica : <span>${sensacionTermica}&#8451</span>;` ;
-    termica.classList.add('termica')
-    
+    termica.innerHTML = `Sensación Termica : <span>${sensacionTermica}&#8451</span>` ;
+    termica.classList.add('termica');
+    latitud.innerHTML = `Latitud: <span>${lat}</span>`;
+    longitud.innerHTML = `Longitud: <span>${lon}</span>`;
+
+
     spinner.style.display="none";
 
     box.appendChild(div);
@@ -80,7 +85,9 @@ function mostrarTemperatura(datos){
     fragment.appendChild(maxima);
     fragment.appendChild(humedad);
     fragment.appendChild(termica);
-
+    fragment.appendChild(latitud);
+    fragment.appendChild(longitud);
+  
     modal.appendChild(fragment);
     cerrarModal()
 
