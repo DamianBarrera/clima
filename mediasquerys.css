@@ -41,5 +41,28 @@
         height: 40px;
         font-size: 1em;
     }
-
+    .more-data {
+        margin: 10px;
+        font-size: 1em;
+    }
+    .box3{
+       height: 75%;
+        
+       padding: 10px 2px;
+       top: 25%;
+    }
+    .box3 p {
+        font-size: 1.5em;
+        margin: 10px 5px;
+    }
+    .box3 p span {
+        margin-left: 5px;
+    }
+    footer{
+        width: 100%;
+        margin: 10px 0;
+        position: fixed;
+        color: #1759a4;
+        text-align: center;
+    }
 }

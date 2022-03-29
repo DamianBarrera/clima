@@ -143,17 +143,16 @@ h1{
 }
  
 .more-data {
-    margin: 10px ;
+    margin: 30px 0 0 10px ;
     text-align: left;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #d1664b;
     cursor: pointer;
 }
 /* **********Estilos box3***************** */
  .box3{
      width: 100%;
-     height: 80%;
-     padding: 10px 2px;
+     padding: 10px 5px;
      margin: 0 auto;
      display: none;
      color: white; 
@@ -161,7 +160,7 @@ h1{
      border-radius: 10px;
      box-shadow:inset 0 0 5px rgb(223, 221, 112);
      position: absolute;
-     top: 25%;
+     top: 40%;
  }
 
  .box3 h3 {
@@ -172,17 +171,27 @@ h1{
  .box3 p {
      color: beige;
      font-size: 1.5em;
-     margin: 10px 5px;
+     margin: 20px 5px;
  }
  .box3 p span {
      color: #f8ec47;
+     margin-left: 20px;
  }
 
  .close{
      display: inline-block ;
-     margin-top: 0px;
+     margin-top: 30px;
      margin-left: 10px;
      font-size: 1.2em;
      color: #d1664b;
      cursor: pointer;
+ }
+
+ footer{
+     
+     width: 100%;
+     margin: 200px 30px;
+     position: fixed;
+     color: #1759a4;
+     text-align: center;
  }

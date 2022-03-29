@@ -9,7 +9,8 @@ form.addEventListener('submit', (e) => {
     const input = document.querySelector('#input-text').value.trim();
     e.preventDefault()
     if( input.trim() === "" ){
-         error('Debe ingresar una ciudad')
+         error('Debe ingresar una ciudad');
+         return;
     }
     consultarApi(input);
 })
