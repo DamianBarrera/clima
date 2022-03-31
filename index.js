@@ -83,6 +83,7 @@ function mostrarTemperatura(datos){
 
     box.appendChild(div);
     box.appendChild(divII);
+    form.reset()
 
     fragment.appendChild(ciudadName);
     fragment.appendChild(tempActual);
