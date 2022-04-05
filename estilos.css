@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -60,6 +60,7 @@ h1{
  
 .input-text:focus{
    background-color: rgb(209, 218, 230);
+   box-shadow: 0 0 5px 1px #359ab6;
 }
 .btn-enviar{
    height: 35px;
@@ -186,12 +187,25 @@ h1{
      color: #d1664b;
      cursor: pointer;
  }
-
- footer{
-     
+ 
+ .footer{
      width: 100%;
-     margin: 200px 30px;
+     margin: 200px 0px;
      position: fixed;
-     color: #1759a4;
      text-align: center;
- }
+     color: #1759a4;
+     text-shadow: 0 0 5px #2b64a6;
+    }
+    
+    .footer p {
+        display: inline;
+    }
+
+    .footer p:hover {
+     color: #4ef120;
+     text-shadow: 0 0 10px #67ee42;
+
+    }
+   
+    
+    
