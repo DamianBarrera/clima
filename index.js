@@ -34,7 +34,7 @@ function consultarApi(ciudad){
             error('NO SE PUDO ENCONTRAR LA CIUDAD ESPECIFICADA')
             return;
         }   
-     
+        console.log(datos)
         mostrarTemperatura(datos)  
         masDatos()
         } )
